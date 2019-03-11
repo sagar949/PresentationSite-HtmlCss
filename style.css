@@ -88,3 +88,28 @@ body {
 .btn>i {
     margin: 0.8rem;
 }
+
+/* Animations */
+
+#page-1>h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) ease-in forwards;
+}
+
+#page-1>p {
+    transform: translateX(-1200px);
+    animation: para var(--animate-speed) ease-in-out forwards;
+}
+
+
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes para {
+    to {
+        transform: translateX(0);
+    }
+}
